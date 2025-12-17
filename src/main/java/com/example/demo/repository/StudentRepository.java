@@ -1,1 +1,3 @@
-public interface StudentRepository extends JpaRepos
+package com.example.demo.repository;
+import 
+public interface StudentRepository extends JpaRepository<
