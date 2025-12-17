@@ -1,7 +1,11 @@
 package com.example.aiml.entity;
 
-
+@entity
+// @Table(name ="students")
 public class Student {
+
+    @id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     private String name;
     private String email;
