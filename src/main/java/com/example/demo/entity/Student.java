@@ -11,6 +11,8 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+    @NotBlank(message="Name filed cannot be empty")
+    @Size(min=3,max=20,message="The user name must be min of 3 and max of 20 character")
     private String name;
     private String email;
     
