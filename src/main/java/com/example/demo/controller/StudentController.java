@@ -1,12 +1,12 @@
-package com.example.aiml.controller;
+package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.example.aiml.entity.Student;
-import com.example.aiml.service.StudentService;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 
 @Controller
 public class StudentController {
