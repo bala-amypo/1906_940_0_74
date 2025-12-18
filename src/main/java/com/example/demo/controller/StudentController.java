@@ -17,5 +17,8 @@ public class StudentController {
 
     @PostMapping("/postdata")
     public ResponseEntity<Student> postdata(@Valid @RequestBody Student student){
-        return new  ResponseEntity<>(studentService.saveStudent(student),HttpStatus.CREATED);
+        return new ResponseEntity<>(studentService.saveStudent(student),HttpStatus.CREATED);
     }
+    @GetMapping("/getdata/{id}")
+    public Student getdata(@PathVariable Long id);
+    return service.getStudentById
